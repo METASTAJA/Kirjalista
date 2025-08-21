@@ -4,6 +4,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        List<Kirja> Kirjat = new List<Kirja>();
+
+        bool Kaynnissa = true;
+
+        while (Kaynnissa)
+        {
+            Console.WriteLine("\nValitse toiminto:");
+            Console.WriteLine("1 = Lisää kirja");
+            Console.WriteLine("2 = Poista kirja");
+            Console.WriteLine("3 = Listaa kirjat");
+            Console.WriteLine("4 = Listaa kirjat genren mukaan");
+            Console.WriteLine("5 = Etsi kirja nimen perusteella");
+            Console.WriteLine("6 = lopeta");
+            Console.Write("Anna valintasi: ");
+
+            String Valinta = Console.ReadLine();
+        }
     }
 }
