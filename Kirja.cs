@@ -1,6 +1,6 @@
 using System;
 
-namespace OhkeSyksy25
+namespace Kirjalista
 {
     public class Kirja
     {
