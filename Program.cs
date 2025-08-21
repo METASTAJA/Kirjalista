@@ -37,10 +37,12 @@ class Program
                     break;
 
                 case "4":
+                    kirjalista.GenreLista();
 
                     break;
 
                 case "5":
+                    kirjalista.EtsiKirja();
 
                     break;
 
