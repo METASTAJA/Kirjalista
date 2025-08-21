@@ -60,6 +60,35 @@ namespace Kirjalista
                 }
             }
         }
+
+        public void GenreLista()
+        {
+            Console.WriteLine("Anna genre");
+            string? genrenimi = Console.ReadLine();
+
+            foreach (Kirja book in Kirjat)
+            {
+                if (genrenimi == book.Genre)
+                {
+                    Console.WriteLine(book);
+                }
+            }
+        }
+
+        public void EtsiKirja()
+        {
+            Console.WriteLine("Anna kirjan nimi tai kirjailian nimi");
+            string? nimi = Console.ReadLine();
+
+            foreach (Kirja kirja in Kirjat)
+            {
+                if (nimi == kirja.Nimi || nimi == kirja.Kirjoittaja)
+                {
+                    Console.WriteLine(kirja);
+                    break;
+                }
+            }
+        }
         
 
 
