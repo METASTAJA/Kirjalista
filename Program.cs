@@ -4,8 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<Kirja> Kirjat = new List<Kirja>();
-
+        Kirjalista kirjalista = new Kirjalista();
         bool Kaynnissa = true;
 
         while (Kaynnissa)
@@ -19,21 +18,22 @@ class Program
             Console.WriteLine("6 = lopeta");
             Console.Write("Anna valintasi: ");
 
-            String Valinta = Console.ReadLine();
+            String? Valinta = Console.ReadLine();
 
              switch (Valinta)
             {
                 case "1":
-                    
+                    kirjalista.LisaaKirja();
                     break;
 
                 case "2":
+                    kirjalista.PoistaKirja();
                     
                     break;
 
                 case "3":
+                    kirjalista.ListaaKirjat();
                     
-
                     break;
 
                 case "4":
@@ -45,7 +45,8 @@ class Program
                     break;
 
                 case "6":
-                    
+                    Kaynnissa = false;
+                    Console.WriteLine("Ohjelma on suljettu");
                     break;
             }
 

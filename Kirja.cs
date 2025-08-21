@@ -4,12 +4,12 @@ namespace Kirjalista
 {
     public class Kirja
     {
-        public string Nimi { get; set; }
-        public string Kirjoittaja { get; set; }
+        public string? Nimi { get; set; }
+        public string? Kirjoittaja { get; set; }
         public int Julkaisuvuosi { get; set; }
-        public string Genre { get; set; }
+        public string? Genre { get; set; }
 
-        public Kirja(string nimi, string kirjoittaja, int julkaisuvuosi, string genre)
+        public Kirja(string? nimi, string? kirjoittaja, int julkaisuvuosi, string? genre)
         {
             this.Nimi = nimi;
             this.Kirjoittaja = kirjoittaja;
